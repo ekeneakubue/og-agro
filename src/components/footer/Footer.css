@@ -1,0 +1,14 @@
+.footer-txt{
+    padding-top: 3px;
+    padding-bottom: 2rem;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: smaller;
+    list-style: none;
+    color: rgb(181, 179, 179);
+}
+
+.foot-body{
+    padding-top: 2rem;
+}
+
+
