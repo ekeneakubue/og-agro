@@ -13,11 +13,11 @@ export default function Footer() {
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>                        
                     </div>      
                 </div>   
-                <div className="col-md-4">
+                <div className="col-md-2">
                     <div className="footerItem">
                         <h6>SUPPORT</h6>
+                        <div className='title-line'><hr className='bg-success lint'/></div>
                         <div className='footer-txt'>
-                            <li>About Us</li><br/>
                             <li>Privacy Policy</li><br/>
                             <li>Terms & Conditions</li><br/>
                             <li>Customer Service</li><br/>
@@ -25,9 +25,23 @@ export default function Footer() {
                         </div>   
                     </div>      
                 </div>   
+                <div className="col-md-2">
+                    <div className="footerItem">
+                        <h6>Useful Links</h6>
+                        <div className='title-line'><hr className='bg-success lint'/></div>
+                        <div className='footer-txt'>
+                            <li>Home</li><br/>
+                            <li>About Us</li><br/>
+                            <li>Products</li><br/>
+                            <li>Blogs</li><br/>
+                            <li>Contacts</li><br/>                            
+                        </div>   
+                    </div>      
+                </div> 
                 <div className="col-md-4">
                     <div className="footerItem">
                         <h6>GET IN TOUCH</h6>
+                        <div className='title-line'><hr className='bg-success lint'/></div>
                         <div className='footer-txt'>
                             <li>Address: University of Nigeria Nsukka Enugu, Nigeria.</li>
                             <li>Telephone Enquiry: +2348032744865</li>

@@ -10,7 +10,7 @@
 }
 .footerItem{
     font: 20px;
-    padding: 3rem;
+    padding: 3rem 2rem;
     text-align: left;
 }
 .footer-txt{
@@ -21,6 +21,12 @@
     list-style: none;
     color: rgb(181, 179, 179);
 } 
+.title-line{
+    width: 3rem;     
+}
+.lint{
+    height: 2px;
+}
 
 
 
