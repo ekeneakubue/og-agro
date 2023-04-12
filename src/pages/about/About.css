@@ -1,0 +1,10 @@
+.about-cont{
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+}
+
+.about-img{
+    border-radius: 10px;    
+    display: flex;
+    margin: auto;
+}
