@@ -1,6 +1,7 @@
 .footer{
     background-color: black;
     color: white;
+    padding: 4rem 3rem;
 }
 .footerLogo{
     width: 7rem;
@@ -10,11 +11,9 @@
 }
 .footerItem{
     font: 20px;
-    padding: 3rem 2rem;
     text-align: left;
 }
 .footer-txt{
-    padding-top: 3px;
     padding-bottom: 2rem;
     font-family: "Lucida Console", "Courier New", monospace;
     font-size: smaller;

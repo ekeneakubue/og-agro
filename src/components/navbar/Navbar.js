@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export default function Navbar() {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mynav">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mynav fixed-top">
             <div className='brand-txt'>
                 <img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" />                
             </div>            

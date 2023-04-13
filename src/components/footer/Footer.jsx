@@ -11,8 +11,8 @@ export default function Footer() {
                     <div className="footerItem">
                         <img src="images/footer_Logo.jpg" alt="logo" className="footerLogo" />                                          
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>                        
-                    </div>      
-                </div>   
+                    </div>  <br/> <br/>    
+                </div>  
                 <div className="col-md-2">
                     <div className="footerItem">
                         <h6>SUPPORT</h6>
@@ -21,10 +21,10 @@ export default function Footer() {
                             <li>Privacy Policy</li><br/>
                             <li>Terms & Conditions</li><br/>
                             <li>Customer Service</li><br/>
-                            <li>Return Policy</li><br/>
+                            <li>Return Policy</li>
                         </div>   
                     </div>      
-                </div>   
+                </div><br/>   
                 <div className="col-md-2">
                     <div className="footerItem">
                         <h6>Useful Links</h6>
@@ -34,10 +34,10 @@ export default function Footer() {
                             <li>About Us</li><br/>
                             <li>Products</li><br/>
                             <li>Blogs</li><br/>
-                            <li>Contacts</li><br/>                            
+                            <li>Contacts</li>                           
                         </div>   
                     </div>      
-                </div> 
+                </div> <br/>
                 <div className="col-md-4">
                     <div className="footerItem">
                         <h6>GET IN TOUCH</h6>
