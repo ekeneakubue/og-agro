@@ -49,16 +49,18 @@ export default function Footer() {
                             <li>Open: <span className='text-warning'>8:00 AM</span> - Close: <span className='text-warning'>4:00 PM</span></li>
                             <li>Saturday - Sunday: Close</li>
                         </div>
-                        <hr className='bg-light'/>     
-                            <h6>
+                            <h4>
                                 <i class="bi bi-whatsapp text-success"></i>&nbsp;&nbsp;&nbsp;
                                 <i class="bi bi-instagram text-danger"></i>&nbsp;&nbsp;&nbsp;
                                 <i class="bi bi-twitter text-primary"></i>&nbsp;&nbsp;&nbsp;
-                            </h6>                      
+                            </h4>                      
                         </div>
                     </div>      
                 </div>            
             </div>
-        </div>       
+            <hr className='bg-success'/>
+            <div className='foot'>All rights reserved | Powered by <span className='text-primary    '>GigoPlanet</span> Services</div>
+        </div>   
+        
     )
 }

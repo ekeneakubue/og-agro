@@ -1,44 +1,77 @@
 import './navbar.css'
-import {Link} from 'react-router-dom'
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import { Link } from "react-router-dom";
 
-export default function Navbar() {
+function NavBar() {
+  const [expand, updateExpanded] = useState(false);
+  const [navColour, updateNavbar] = useState(false);
+
+  function scrollHandler() {
+    if (window.scrollY >= 20) {
+      updateNavbar(true);
+    } else {
+      updateNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", scrollHandler);
+
   return (
-    <div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light mynav fixed-top">
-            <div className='brand-txt'>
-                <img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" />                
-            </div>            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end navs-txt" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <Link to ='/'>                                                     
-                            <a class="nav-link text-dark" href="#">Home</a>                                                                               
-                        </Link>
-                    </li>
+    <div className='container-fluid mynav fixed-top bg-light'>
+        <Navbar
+        expanded={expand}
+        expand="md"
+        >
+        <Container>
+            <Navbar.Brand href="/">
+                <img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" />
+            </Navbar.Brand>
 
-                    <li class="nav-item">
-                        <Link to ='/about'>
-                            <a class="nav-link text-dark" href="#">About</a>
-                        </Link>
-                    </li>
+            <Navbar.Toggle
+                className="setup text-success"
+                aria-controls="responsive-navbar-nav"
+                onClick={() => {
+                updateExpanded(expand ? false : "expanded");
+                }}
+            >
+            <i class="bi bi-list"></i>
+            </Navbar.Toggle>
 
-                    <li class="nav-item">
-                        <Link to ='/products'>
-                            <a class="nav-link text-dark" href="#">Products</a>
-                        </Link>
-                    </li>                  
+            <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto" defaultActiveKey="#home">
 
-                    <li class="nav-item">
-                        <Link to ='/contacts'>
-                            <a class="nav-link text-dark" href="#">Contact Us</a>
-                        </Link>
-                    </li>                
-                </ul>
-            </div>
-        </nav>
+                <Nav.Item className="setup">
+                <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                    Home
+                </Nav.Link>
+                </Nav.Item>
+
+                <Nav.Item className="setup">
+                <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
+                    About
+                </Nav.Link>
+                </Nav.Item>
+
+                <Nav.Item className="setup">
+                <Nav.Link as={Link} to="/products" onClick={() => updateExpanded(false)}>
+                    Products
+                </Nav.Link>
+                </Nav.Item>
+
+                <Nav.Item className="setup">
+                <Nav.Link as={Link} to="/contacts" onClick={() => updateExpanded(false)}>
+                    Contacts
+                </Nav.Link>
+                </Nav.Item>
+            </Nav>
+            </Navbar.Collapse>
+        </Container>
+        </Navbar>
     </div>
-  )
+  );
 }
+
+export default NavBar;
