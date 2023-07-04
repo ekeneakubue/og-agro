@@ -24,3 +24,6 @@
 .setup{
     text-align: center;
 }
+.mylogo{
+    display: flex;
+    justify-content: end;
