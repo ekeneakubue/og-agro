@@ -26,7 +26,7 @@ function NavBar() {
         expand="md"
         >
         <Container>
-            <Navbar.Brand href="/">
+            <Navbar.Brand href="/" className="mylogo">
                 <div><img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" /></div>
                 <h4>OG Agro Exports</h4>
             </Navbar.Brand>
