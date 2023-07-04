@@ -27,7 +27,7 @@ function NavBar() {
         >
         <Container>
             <Navbar.Brand href="/">
-                <img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" />
+                <div><img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" /></div>
                 <h4>OG Agro Exports</h4>
             </Navbar.Brand>
 
