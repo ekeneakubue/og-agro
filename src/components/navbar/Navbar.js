@@ -28,6 +28,7 @@ function NavBar() {
         <Container>
             <Navbar.Brand href="/">
                 <img src="images/footer_Logo.jpg" alt="logo" className="navbarLogo" />
+                <h4>OG Agro Exports
             </Navbar.Brand>
 
             <Navbar.Toggle
